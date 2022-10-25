@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="github.com/amateratsoo">
+    <meta name="description" content="login page case study with dark mode feature">
+
+    <title>Lighthouse</title>
+
+    <link rel="shortcut icon" href="public/icons/favicon-dark-scheme.png" type="image/x-icon" class="favicon" />
+    <link rel="stylesheet" href="src/styles/index.css" />
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="src/js/index.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <section class="login-container">
+      <div class="display-mode"><i class="ph-moon-bold"></i></div>
+
+      <header>
+        <div class="logo-container">
+          <img src="public/icons/logo.png" alt="brand logo">
+        </div>
+
+        <h1>Login</h1>
+        <h2>to get access to your files</h2>
+      </header>
+
+      <form action="" autocomplete="off">
+        <div class="input-wrapper">
+          <label for="email">Email address</label>
+
+          <div class="input-field">
+            <input id="email" type="email" placeholder="jhondoe@example.com">
+          </div>
+        </div>
+
+        <div class="input-wrapper">
+          <div class="password-content">
+            <label for="password">Password</label>
+            <a href="" class="special-link">Forgot your password?</a>
+          </div>
+
+          <div class="input-field with-picture">
+            <input id="password" type="password" placeholder="********">
+            <i class="ph-eye-bold"></i>
+          </div>
+        </div>
+
+        <article class="checkbox-wrapper">
+          <label for="keep-me-logged-in" class="synthetic-checkbox"><i class="ph-check-bold"></i></label>
+
+          <label for="keep-me-logged-in"><p>Keep me logged in</p></label>
+          <input type="checkbox" id="keep-me-logged-in">
+        </article>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <footer><p>Don't have an account?</p>&nbsp;<a href="" class="special-link">Register</a></footer>
+      <div class="dark-theme-wrapper"></div>
+    </section>
+    <article class="decorative-img"></article>
+  </body>
+
+</html>

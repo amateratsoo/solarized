@@ -1,0 +1,27 @@
+i {
+  font-size: var(--icon-size-lg);
+  color: var(--icons-color);
+}
+
+.ph-moon-bold {
+  color: #1f2937;
+}
+
+.ph-sun-bold {
+  color: #54545b;
+}
+
+.ph-eye-bold,
+.ph-eye-slash-bold,
+.ph-eye-closed-bold {
+  margin-block: auto;
+  cursor: pointer;
+
+  font-size: var(--icon-size-md);
+  color: var(--font-secondary);
+}
+
+.ph-check-bold {
+  font-size: var(--icon-size-sm);
+  color: #f5f5f5;
+}
