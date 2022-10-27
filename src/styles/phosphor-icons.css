@@ -24,4 +24,5 @@ i {
 .ph-check-bold {
   font-size: var(--icon-size-sm);
   color: #f5f5f5;
+  opacity: 0;
 }

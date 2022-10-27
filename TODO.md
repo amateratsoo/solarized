@@ -20,8 +20,13 @@
 
 ## Implement the dark mode feature
 
-  - [ ] set the colors
-  - [ ] write the logic
+  - [x] set the colors
+  - [x] write the logic
+  - [ ] persist the selected mode even when we close the tab
+
+## Set cool gradients animations <mark style='background-image: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); color: #000; border-radius: 4px; padding: 1.4px 5.5px; text-align: center'>**(Optional)**</mark>
+  - [x] try using canvas for performance 
+  - [x] gradient should react to hover state depending on the mouse position
 
 <br />
 

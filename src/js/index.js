@@ -1,12 +1,12 @@
 import { darkTheme, lightTheme } from './themes.js';
+import { Gradient } from './gradient.js';
+import { animateMesh } from './animateMesh.js';
 
-const browserIsDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-const favicon = document.querySelector('.favicon');
+const mesh = new Gradient();
+mesh.initGradient('.mesh');
 
-window.addEventListener('load', () => {
-  const faviconType = browserIsDarkMode ? 'dark' : 'light';
-  favicon.setAttribute('href', `public/icons/favicon-${faviconType}-scheme.png`);
-});
+animateMesh();
+
 
 const themeToogle = document.querySelector('.display-mode');
 const passwordInput = document.querySelector('#password');

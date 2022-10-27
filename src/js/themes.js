@@ -1,8 +1,21 @@
 const root = document.documentElement.style;
+const arrOfProps = 
+  [
+    '--primary-color',
+    '--secondary-color',
+    '--accent-color',
+    '--checkbox-box-shadow',
+    '--input-color',
+    '--links-color',
+    '--icons-color',
+    '--moon-toggle-color',
+    '--text',
+    '--input-text',
+    '--font-primary',
+    '--font-secondary'
+  ]
 
 const darkThemeColors = {
-  backgroundColor: '#18181b',
-
   primaryColor: '#7c3aed',
   secondaryColor: '#22222a',
   accentColor: '#a78bfa',
@@ -18,29 +31,18 @@ const darkThemeColors = {
   fontSecondary: '#7C7C8A'
 }
 
+const darkThemePropsValues = Object.entries(darkThemeColors);
+
 function darkTheme(sleepInMiliseconds) {
   const sleep = setTimeout(() => {
-    root.setProperty('--background-color', darkThemeColors.backgroundColor);
+    root.setProperty('--background-color', '#18181b');
     return clearTimeout(sleep);
   }, sleepInMiliseconds);
-
-  root.setProperty('--primary-color', darkThemeColors.primaryColor);
-  root.setProperty('--secondary-color', darkThemeColors.secondaryColor);
-  root.setProperty('--accent-color', darkThemeColors.accentColor);
-  root.setProperty('--checkbox-box-shadow', darkThemeColors.checkboxBoxShadow);
-  root.setProperty('--input-color', darkThemeColors.inputColor);
-  root.setProperty('--links-color', darkThemeColors.linksColor);
-  root.setProperty('--icons-color', darkThemeColors.iconsColor);
-  root.setProperty('--moon-toggle-color', darkThemeColors.moonToggleColor);
-  root.setProperty('--text', darkThemeColors.text);
-  root.setProperty('--input-text', darkThemeColors.inputText);
-  root.setProperty('--font-primary', darkThemeColors.fontPrimary);
-  root.setProperty('--font-secondary', darkThemeColors.fontSecondary);
+  
+  arrOfProps.forEach((prop, index) => root.setProperty(prop, darkThemePropsValues[index][1]));
 }
 
 const lightThemeColors = {
-  backgroundColor: '#f5f5f5',
-
   primaryColor: '#8b5cf6',
   secondaryColor: '#d1d5db',
   accentColor: '#a78bfa',
@@ -56,20 +58,12 @@ const lightThemeColors = {
   fontSecondary: '#4b5563'
 }
 
+const lightThemePropsValues = Object.entries(lightThemeColors);
+
 function lightTheme() {
-  root.setProperty('--background-color', lightThemeColors.backgroundColor);
-  root.setProperty('--primary-color', lightThemeColors.primaryColor);
-  root.setProperty('--secondary-color', lightThemeColors.secondaryColor);
-  root.setProperty('--accent-color', lightThemeColors.accentColor);
-  root.setProperty('--checkbox-box-shadow', lightThemeColors.checkboxBoxShadow);
-  root.setProperty('--input-color', lightThemeColors.inputColor);
-  root.setProperty('--links-color', lightThemeColors.linksColor);
-  root.setProperty('--icons-color', lightThemeColors.iconsColor);
-  root.setProperty('--moon-toggle-color', lightThemeColors.moonToggleColor);
-  root.setProperty('--text', lightThemeColors.text);
-  root.setProperty('--input-text', lightThemeColors.inputText);
-  root.setProperty('--font-primary', lightThemeColors.fontPrimary);
-  root.setProperty('--font-secondary', lightThemeColors.fontSecondary);
+  root.setProperty('--background-color', '#f5f5f5');
+
+  arrOfProps.forEach((prop, index) => root.setProperty(prop, lightThemePropsValues[index][1]));
 }
 
 export { darkTheme, lightTheme };
