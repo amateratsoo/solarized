@@ -125,6 +125,10 @@ body {
   .decorative-img {
     display: none;
   }
+
+  .with-picture input::placeholder {
+    position: initial;
+  }
 }
 
 @media (max-width: 316px) {
