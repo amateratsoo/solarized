@@ -2,19 +2,19 @@
 
 Responsive login form with dark/light theme support and an interactive UI components.
 
-<center>
-    <a href='#project'>Project</a> |
-    <a href='#tools'>Tools</a> |
-    <a href='#struggles'>Struggles<a> |
-    <a href='#lessons'>Lessons</a>
-</center>
+<p align='center'>
+  <a href='#project'>Project</a> |
+  <a href='#tools'>Tools</a> |
+  <a href='#struggles'>Struggles<a> |
+  <a href='#lessons'>Lessons</a>
+</p>
 
 <br />
 <br />
 
-<center>
-  <img src='.github/preview.gif' alt='preview' />
-</center>
+<p align='center'>
+  <img src='.github/preview.png' alt='preview' />
+</p>
 
 <br />
 
