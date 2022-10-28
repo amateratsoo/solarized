@@ -185,7 +185,7 @@
 
   font-size: var(--font-size-md);
   font-weight: 700;
-  color: '#000000';
+  color: #000000;
 }
 
 .login-container form button:hover {
