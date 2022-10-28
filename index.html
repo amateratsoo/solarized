@@ -18,9 +18,61 @@
 
     <script src="https://unpkg.com/phosphor-icons"></script>
     <script src="src/js/index.js" type="module" defer></script>
+
+    <!--
+      this script is to prevent
+      flickering when window reloads
+      on dark theme
+    -->
+    <script>
+      const root = document.documentElement.style;
+      const arrOfProps = 
+          [
+            '--primary-color',
+            '--secondary-color',
+            '--accent-color',
+            '--checkbox-box-shadow',
+            '--input-color',
+            '--links-color',
+            '--icons-color',
+            '--moon-toggle-color',
+            '--text',
+            '--input-text',
+            '--font-primary',
+            '--font-secondary'
+          ];
+
+        const darkThemeColors = {
+          primaryColor: '#7c3aed',
+          secondaryColor: '#22222a',
+          accentColor: '#a78bfa',
+          checkboxBoxShadow: '#3f3f46',
+          inputColor: '#202024',
+          linksColor: '#8b5cf6',
+          iconsColor: '#1E1E1E',
+          moonToggleColor: '#3f3f46',
+
+          text: '#7C7C8A',
+          inputText: '#d1d5db',
+          fontPrimary: '#f5f5f5',
+          fontSecondary: '#7C7C8A'
+        }
+
+      const darkThemePropsValues = Object.entries(darkThemeColors);
+
+      if (window.localStorage.getItem('isDarkTheme') === 'true') {
+        root.setProperty('--background-color', '#18181b');
+
+        arrOfProps.forEach((prop, index) => {
+          return root.setProperty(prop, darkThemePropsValues[index][1]);
+
+          console.log(prop, ': ', darkThemePropsValues[index][1]);
+        })
+      }
+    </script>
   </head>
 
-  <body>
+  <body>    
     <section class="login-container">
       <div class="display-mode"><i class="ph-moon-bold"></i></div>
 

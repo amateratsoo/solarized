@@ -1,4 +1,7 @@
 const root = document.documentElement.style;
+const darkThemeWrapper = document.querySelector('.dark-theme-wrapper');
+const themeIcon = document.querySelector('.display-mode i');
+
 const arrOfProps = 
   [
     '--primary-color',
@@ -34,6 +37,9 @@ const darkThemeColors = {
 const darkThemePropsValues = Object.entries(darkThemeColors);
 
 function darkTheme(sleepInMiliseconds) {
+  themeIcon.setAttribute('class', 'ph-sun-bold');
+  darkThemeWrapper.style.height = '100%';
+
   const sleep = setTimeout(() => {
     root.setProperty('--background-color', '#18181b');
     return clearTimeout(sleep);
@@ -61,6 +67,8 @@ const lightThemeColors = {
 const lightThemePropsValues = Object.entries(lightThemeColors);
 
 function lightTheme() {
+  themeIcon.setAttribute('class', 'ph-moon-bold');
+  darkThemeWrapper.style.height = '0';
   root.setProperty('--background-color', '#f5f5f5');
 
   arrOfProps.forEach((prop, index) => root.setProperty(prop, lightThemePropsValues[index][1]));

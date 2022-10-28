@@ -8,32 +8,44 @@ mesh.initGradient('.mesh');
 animateMesh();
 
 
-const themeToogle = document.querySelector('.display-mode');
+const themeToggle = document.querySelector('.display-mode');
 const passwordInput = document.querySelector('#password');
 const showHidePasswordIcon = document.querySelector('.with-picture i');
 const formCheckbox = document.querySelector('#keep-me-logged-in');
 
 let isDarkTheme = false;
 
-themeToogle.addEventListener('click', () => {
+window.addEventListener('load', () => {
+  if (window.localStorage.getItem('isDarkTheme') === 'true') {
+    document.querySelector('.display-mode i').setAttribute('class', 'ph-sun-bold');
+    document.querySelector('.dark-theme-wrapper').style.height = '100%';
+
+    isDarkTheme = true;
+  }
+})
+
+themeToggle.addEventListener('click', () => {
   isDarkTheme = !isDarkTheme;
-  const darkThemeWrapper = document.querySelector('.dark-theme-wrapper');
-  const themeIcon = document.querySelector('.display-mode i');
 
   if (isDarkTheme) {
-    themeIcon.setAttribute('class', 'ph-sun-bold');
-
-    darkThemeWrapper.style.height = '100%';
     darkTheme(300);
   }
 
   else {
-    themeIcon.setAttribute('class', 'ph-moon-bold');
-
-    darkThemeWrapper.style.height = '0';
     lightTheme();
   }
-})
+
+  themeToggle.style.setProperty('pointer-events', 'none');
+  const delay = setTimeout(() => {
+    themeToggle.style.removeProperty('pointer-events');
+    return clearTimeout(delay);
+
+  }, 150);
+
+
+  window.localStorage.setItem('isDarkTheme', isDarkTheme);
+});
+
 
 let passwordIsHidden = true;
 

@@ -3,7 +3,7 @@ const canvasContainerEl = document.querySelector('.decorative-img');
 function setAnimation({ target, clientX, clientY }) {
   const canvasContainer = window.getComputedStyle(target);
   const remainingElSize = window.getComputedStyle(
-    document.querySelector('form')
+    document.querySelector('.login-container')
     );
 
   /*
@@ -19,23 +19,27 @@ function setAnimation({ target, clientX, clientY }) {
     .filter(item => item !== 'p' && item !== 'x')
     .join('');
 
+  const canvasContainerHeight = [...canvasContainer.getPropertyValue('height')]
+    .filter(item => item !== 'p' && item !== 'x')
+    .join('');
+
   const translationPercentage = 6;
+  
 
-
-  if (clientX - remainingElWidth < canvasContainerWidth / 2) {
+  if (clientX - remainingElWidth < (canvasContainerWidth - 185) / 2) {
     canvasContainerEl.style.setProperty('--mouse-pos-x', `${translationPercentage}%`);
   }
 
-  else if (clientX - remainingElWidth > canvasContainerWidth / 2) {
+  else if (clientX - remainingElWidth > (canvasContainerWidth - 185) / 2) {
     canvasContainerEl.style.setProperty('--mouse-pos-x', `-${translationPercentage}%`);
   }
 
 
-  if (clientY < canvasContainerWidth / 2) {
+  if (clientY < (canvasContainerHeight - 129) / 2) {
     canvasContainerEl.style.setProperty('--mouse-pos-y', `${translationPercentage}%`);
   }
 
-  else if (clientY > canvasContainerWidth / 2) {
+  else if (clientY > (canvasContainerHeight - 129) / 2) {
     canvasContainerEl.style.setProperty('--mouse-pos-y', `-${translationPercentage}%`);
   }
 
