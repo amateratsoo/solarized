@@ -40,9 +40,13 @@ Tools and tecnologies that I used in this project:
 - `JavaScript`
 - `LocalStorage`
 
+<br />
+
 ## ✨ Struggles <a id='struggles'></a>
 
 No struggles at all.
+
+<br />
 
 ## ✨ Lessons <a id='lessons'></a>
 
