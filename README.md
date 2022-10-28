@@ -38,6 +38,7 @@ Tools and tecnologies that I used in this project:
 - `HTML`
 - `CSS`
 - `JavaScript`
+- `npm`
 - `LocalStorage`
 
 <br />
