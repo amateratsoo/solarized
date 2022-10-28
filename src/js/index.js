@@ -1,5 +1,5 @@
 import { darkTheme, lightTheme } from './themes.js';
-import { Gradient } from './gradient.js';
+import { Gradient } from './Gradient.js';
 import { animateMesh } from './animateMesh.js';
 
 const mesh = new Gradient();
