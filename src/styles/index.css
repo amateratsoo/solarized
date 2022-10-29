@@ -134,8 +134,8 @@ body {
 @media (max-width: 375px) {
   .with-picture input::placeholder {
     position: absolute;
-    top: -40%;
-    transform: translateY(5%);
+    top: -32%;
+    transform: translateY(10%);
   }
 }
 
