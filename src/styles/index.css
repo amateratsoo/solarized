@@ -132,6 +132,7 @@ body {
 
   .with-picture input::placeholder {
     position: relative;
+    margin-block: auto;
   }
 }
 
