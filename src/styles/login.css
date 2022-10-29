@@ -111,6 +111,7 @@
 }
 
 .with-picture input {
+  position: relative;
   width: 92%;
 }
 
