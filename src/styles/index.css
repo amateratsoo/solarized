@@ -132,7 +132,7 @@ body {
 
   .with-picture input::placeholder {
     position: relative;
-    margin: 0 auto;
+    margin-bottom: 0.4rem;
   }
 }
 
