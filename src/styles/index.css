@@ -129,13 +129,10 @@ body {
   .with-picture input {
     width: 89%;
   }
-}
 
-@media (max-width: 375px) {
   .with-picture input::placeholder {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-0.2%);
+    position: relative;
+    margin: 0 auto;
   }
 }
 
