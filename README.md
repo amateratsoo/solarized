@@ -3,10 +3,10 @@
 Responsive login form with dark/light theme support and interactive UI components.
 
 <p align='center'>
-  <a href='#-project-'>Project</a> |
-  <a href='#-tools-'>Tools</a> |
-  <a href='#-struggles-'>Struggles<a> |
-  <a href='#-lessons-'>Lessons</a>
+  <a href='#-project'>Project</a> |
+  <a href='#-tools'>Tools</a> |
+  <a href='#-struggles'>Struggles<a> |
+  <a href='#-lessons'>Lessons</a>
 </p>
 
 <br />
