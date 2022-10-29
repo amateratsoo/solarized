@@ -129,6 +129,10 @@ body {
   .with-picture input {
     width: 89%;
   }
+
+  .with-picture input::placeholder {
+    position: relative;
+  }
 }
 
 @media (max-width: 316px) {
