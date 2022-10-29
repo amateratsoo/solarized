@@ -135,7 +135,7 @@ body {
   .with-picture input::placeholder {
     position: absolute;
     top: -40%;
-    transform: translateY(10%);
+    transform: translateY(5%);
   }
 }
 
