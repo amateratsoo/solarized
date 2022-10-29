@@ -1,12 +1,12 @@
 # Solarized <img src='public/logo.svg' height='24px' width='24px' />
 
-Responsive login form with dark/light theme support and an interactive UI components.
+Responsive login form with dark/light theme support and interactive UI components.
 
 <p align='center'>
-  <a href='#project'>Project</a> |
-  <a href='#tools'>Tools</a> |
-  <a href='#struggles'>Struggles<a> |
-  <a href='#lessons'>Lessons</a>
+  <a href='#-project-'>Project</a> |
+  <a href='#-tools-'>Tools</a> |
+  <a href='#-struggles-'>Struggles<a> |
+  <a href='#-lessons-'>Lessons</a>
 </p>
 
 <br />
@@ -18,7 +18,7 @@ Responsive login form with dark/light theme support and an interactive UI compon
 
 <br />
 
-## ✨ Project <a id='project'></a>
+## ✨ Project
 
 Part of my one week projects, this project helped me train my CSS, UI, JS and logic skills. My main goal with this was to develop an elegant, interative and pleaseant login form and is the first time that I implement a dark/ligth mode system.
 
@@ -31,7 +31,7 @@ You can see my insights and breakdowns throught the project in [this](TODO.md) l
 
 <br />
 
-## ✨ Tools <a id='tools'></a>
+## ✨ Tools
 
 Tools and tecnologies that I used in this project:
 
@@ -43,12 +43,12 @@ Tools and tecnologies that I used in this project:
 
 <br />
 
-## ✨ Struggles <a id='struggles'></a>
+## ✨ Struggles
 
 No struggles at all.
 
 <br />
 
-## ✨ Lessons <a id='lessons'></a>
+## ✨ Lessons
 
 I now understand why experienced devs use third party tools to implement differents modes, this was a small project but the theme part took a good amount of time to get ready, because of that I think that in big projects is better to focus on the logic, data treatment and important features rather than the themes, especially when third party tools handle that for us.
