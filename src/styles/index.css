@@ -126,10 +126,6 @@ body {
     display: none;
   }
 
-  .with-picture input::placeholder {
-    position: initial;
-  }
-
   .with-picture input {
     width: 89%;
   }
