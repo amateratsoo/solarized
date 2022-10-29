@@ -159,6 +159,7 @@
   
   background-color: var(--input-color);
   box-shadow: 0 0 8px var(--checkbox-box-shadow);
+  transition: all 150ms ease;
   cursor: pointer;
 
   border-radius: 0.4rem;
