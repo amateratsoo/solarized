@@ -131,6 +131,14 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  .with-picture input::placeholder {
+    position: absolute;
+    top: -40%;
+    transform: translateY(10%);
+  }
+}
+
 @media (max-width: 316px) {
   .password-content .special-link:is(a) {
     text-align: end;
